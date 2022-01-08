@@ -4,4 +4,8 @@ TIL about `Numba`: a [Python Compiler](https://www.intel.com/content/dam/www/pub
 
 Going to play around with it in this repo to test out.
 
+### env
 
+- `conda create -n numba`
+- `conda install python`
+- `conda install -c numba numba`
