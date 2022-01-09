@@ -37,4 +37,6 @@ def count_tickets():
 
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
+    start_time = time()
     count_tickets()
+    print(f"took: {round(time() - start_time, 2)} seconds")
