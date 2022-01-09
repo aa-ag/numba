@@ -22,6 +22,9 @@ def count_tickets():
                         headers=get_headers
                     )
 
+    if response.status_code == 429:
+        sleep(int(response.headers['retry-after']))
+
     ticket_count = response.json()['count']['value']
     print(ticket_count)
 
