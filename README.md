@@ -11,3 +11,4 @@ Next steps are probably: [this tutorial](https://github.com/barbagroup/numba_tut
 - `conda create -n numba`
 - `conda install python`
 - `conda install -c numba numba`
+- `conda install -c anaconda requests`
