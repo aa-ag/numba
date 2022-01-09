@@ -4,6 +4,8 @@ TIL about `Numba`: a [Python Compiler](https://www.intel.com/content/dam/www/pub
 
 Going to play around with it in this repo to test out.
 
+Next steps are probably: [this tutorial](https://github.com/barbagroup/numba_tutorial_scipy2016).
+
 ### env
 
 - `conda create -n numba`
