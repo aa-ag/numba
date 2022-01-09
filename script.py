@@ -1,10 +1,15 @@
 ############------------ IMPORTS ------------############
 from time import time, sleep
 from numba import jit
+from numba.core.decorators import njit
 
 
 ############------------ FUNCTION(S) ------------############
+
 def example_function():
+    '''
+     took: 105.74 seconds
+    '''
     expected_result = list()
 
     for x in range(100):
@@ -13,7 +18,7 @@ def example_function():
                 if (x + y + z) / 10 == x:
                     expected_result.append(x)
         print(x)
-    return expected_result    
+    return expected_result
 
 
 ############------------ DRIVER CODE ------------############
