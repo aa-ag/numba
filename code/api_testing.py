@@ -25,6 +25,11 @@ def count_tickets():
     if response.status_code == 429:
         sleep(int(response.headers['retry-after']))
 
+    if response.status_code != 200:
+        print(f'Status: {response.status_code}\n')
+        print(response.text)
+        exit()
+
     ticket_count = response.json()['count']['value']
     print(ticket_count)
 
