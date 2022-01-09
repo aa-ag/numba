@@ -1,11 +1,9 @@
 ############------------ IMPORTS ------------############
 from time import time, sleep
-from numba import jit
 from numba.core.decorators import njit
 
 
 ############------------ FUNCTION(S) ------------############
-
 def example_function():
     '''
      took: 105.74 seconds
