@@ -22,7 +22,8 @@ def count_tickets():
                         headers=get_headers
                     )
 
-    print(response.status_code)
+    ticket_count = response.json()['count']['value']
+    print(ticket_count)
 
 
 
