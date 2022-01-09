@@ -1,11 +1,12 @@
 ############------------ IMPORTS ------------############
 from time import time, sleep
 from numba.core.decorators import njit
-import secrets
+from .secrets import token
 
 
 ############------------ GLOBAL VARIABLE(S) ------------############
-api_credential = secrets.token
+zd_token = token
+instance_url = 'https://z3n-platformdev-aaron.zendesk.com/'
 
 
 ############------------ FUNCTION(S) ------------############
